@@ -8,6 +8,7 @@ A basic Ionic client web application which consumes the RestAPI Backend. [Covere
 2. [The RestAPI Backend](https://github.com/udacity/cloud-developer/tree/master/course-02/exercises/udacity-c2-restapi), a Node-Express server which can be deployed to a cloud service. [Covered in the course]
 3. [The Image Filtering Microservice](https://github.com/udacity/cloud-developer/tree/master/course-02/project/image-filter-starter-code), the final project for the course. It is a Node-Express application which runs a simple script to process images. [Your assignment]
 
+## Tasks
 
 ### Setup Node Environment
 
@@ -30,28 +31,18 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
 Follow the process described in the course to `eb init` a new application and `eb create` a new environment to deploy your image-filter service! Don't forget you can use `eb deploy` to push changes.
 
-### My Elastic Beanstalk Endpoint
-http://image-filter-starter-code-dev2222222222222222222222222222222222.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_960_720.jpg
+## Stand Out (Optional)
 
-👤 **Yannick-Noel AKA**
+### Refactor the course RESTapi
 
-- Location: Côte d'Ivoire
-- GitHub: [@codecaiine](https://github.com/codecaiine)
-- Twitter: [@yannicknaka](https://twitter.com/yannicknaka)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yannick-no%C3%ABl-aka/)
+If you're feeling up to it, refactor the course RESTapi to make a request to your newly provisioned image server.
 
-## 🤝 Contributing
+### Authentication
 
-Contributions, issues, and feature requests are welcome!
+Prevent requests without valid authentication headers.
+> !!NOTE if you choose to submit this, make sure to add the token to the postman collection and export the postman collection file to your submission so we can review!
 
-Feel free to check the [issues page](https://github.com/codecaiine/udacity-cloud/issues).
+### Custom Domain Name
 
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-
-## Acknowledgments
-
-- Thanks to Udacity & Alx
-- [@ugogineering](https://github.com/ugogineering)
+Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server)
+> !NOTE: Domain names are not included in AWS’ free tier and will incur a cost.
